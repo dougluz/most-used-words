@@ -5,7 +5,7 @@
       color="primary"
       dark
     >
-      <v-toolbar-title>Most Used Users</v-toolbar-title>
+      <v-toolbar-title>Most Used Words</v-toolbar-title>
     </v-app-bar>
 
     <v-content>

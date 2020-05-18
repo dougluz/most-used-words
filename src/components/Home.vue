@@ -22,21 +22,22 @@
 </template>
 
 <script>
+import { ipcRenderer } from 'electron'
 import WordPill from './WordPill'
 
 export default {
   data: () => ({
     files: [],
-    groupedWords: [
-      { name: 'you', amount: 900 },
-      { name: 'he', amount: 300 },
-      { name: 'hi', amount: 525 },
-      { name: 'i', amount: 879 },
-    ]
+    groupedWords: []
   }),
   methods: {
     processSubtitles () {
-      console.log(this.files)
+      const paths = this.files.map(f => f.path)
+      ipcRenderer.send('process-subtitles', paths)
+      ipcRenderer.on('process-subtitles', (event, response) => {
+        console.log('responmse')
+        this.groupedWords = response
+      })
     }
   },
   components: {
