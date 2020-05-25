@@ -4,9 +4,9 @@
 With this app you can use the srt subtitle file to see which are the mosted spoken words in a TV show. 
 
 ## Images
-![the app homescreen](https://i.ibb.co/rQ7F8qR/Screenshot-20200524-210423.png)
-![selecting the files](https://i.ibb.co/pvYKvwP/Screenshot-20200524-210543.png)
-![result](https://i.ibb.co/gFJWQZH/Screenshot-20200524-210629.png)
+![the app homescreen](https://i.imgur.com/GHw9ntX.png)
+![selecting the files](https://i.imgur.com/eYfLJQK.png)
+![result](https://i.imgur.com/1HfMGJw.png)
 
 ## Project setup
 ```
